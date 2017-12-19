@@ -10,6 +10,8 @@ namespace ExamProject
     {
         static void Main(string[] args)
         {
+            Person buyer = new Person();
+            SodaMachine sodaMachine = new SodaMachine(20, 10, 20, 50);
         }
     }
 }
