@@ -17,5 +17,25 @@ namespace ExamProject
             register = new Register(amountOfQuarters, amountOfDimes, amountOfNickels, amountOfPennies);
 
         }
+        void CheckCoins()
+        {
+
+        }
+        void CheckCoinValues()
+        {
+
+        }
+        void SellSoda()
+        {
+
+        }
+        void RemoveCoins()
+        {
+
+        }
+        void AddCoints()
+        {
+
+        }
     }
 }
