@@ -8,5 +8,10 @@ namespace ExamProject
 {
     class Person
     {
+        PiggyBank piggyBank;
+        public Person()
+        {
+            piggyBank = new PiggyBank();
+        }
     }
 }
