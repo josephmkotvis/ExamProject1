@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamProject
 {
-    class Nickel
+    class Nickel : Coin
     {
     }
 }

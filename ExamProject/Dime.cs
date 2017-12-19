@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamProject
 {
-    class Dime
+    class Dime : Coin
     {
     }
 }
