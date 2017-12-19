@@ -6,20 +6,36 @@ using System.Threading.Tasks;
 
 namespace ExamProject
 {
-    class SodaMachine
+    public class SodaMachine
     {
-        Inventory inventory;
+        public Inventory inventory;
+        UserInterface UI;
+        public bool cantSell;
+        public double currentSodaChoicePrice;
+       
         public SodaMachine(int amountOfGrapeSoda, int amountOfOrangeSoda, int amountOfLemonSoda, int amountOfQuarters, int amountOfDimes, int amountOfNickels, int amountOfPennies)
         {
 
             inventory = new Inventory(amountOfGrapeSoda, amountOfOrangeSoda, amountOfLemonSoda, amountOfQuarters, amountOfDimes, amountOfNickels, amountOfPennies);
 
         }
-        public void CheckSodaAvailability()
+        public void CheckSodaAvailability(string buyerResponse)
         {
-
+            if (inventory.sodaAmount[Convert.ToInt32(buyerResponse)] == 0)
+            {
+                cantSell = true;
+                UI.DisplayNoSodaAvailable(buyerResponse);
+            }
+            else
+            {
+                UI.DisplaySodaAvailable(buyerResponse);
+            }
         }
-        public void CheckSodaPrice()
+        public void CheckSodaPrice(string buyerResponse)
+        {
+            UI.DisplaySodaPrice(inventory.sodaAmount[Convert.ToInt32(buyerResponse)]);
+        }
+        public void AskForOpinion()
         {
 
         }
@@ -43,17 +59,17 @@ namespace ExamProject
         {
 
         }
-        void CheckCoinValues()
-        {
 
+        public void SellSoda(string sodaChoice)
+        {
+            inventory.sodaAmount[Convert.ToInt32(sodaChoice)] -= 1;
         }
-        public void SellSoda()
+        public void TakeCoins(List<int> buyercoinsSpent)
         {
-
-        }
-        public void TakeCoins()
-        {
-
+            for (int i = 0; i<inventory.piggyBank.amountOfCoins.Count; i++)
+            {
+                inventory.piggyBank.amountOfCoins[i] += buyercoinsSpent[i];
+            }
         }
         //void RemoveCoins()
         //{

@@ -10,7 +10,7 @@ namespace ExamProject
     {
         public Quarter()
         {
-            value = .25;
+            this.value = .25;
         }
     }
 }

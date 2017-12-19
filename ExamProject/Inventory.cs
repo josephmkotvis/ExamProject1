@@ -6,20 +6,28 @@ using System.Threading.Tasks;
 
 namespace ExamProject
 {
-    class Inventory
+
+    public class Inventory
     {
-        Dictionary<Soda, int> sodas;
+        public List <int> sodaAmount;
+        public List<Soda> sodas;
         GrapeSoda grapeSoda;
         OrangeSoda orangeSoda;
         LemonSoda lemonSoda;
-        PiggyBank piggyBank;
+        public PiggyBank piggyBank;
         public Inventory(int amountOfGrapeSoda, int amountOfOrangeSoda, int amountOfLemonSoda, int amountOfQuarters, int amountOfDimes, int amountOfNickels, int amountOfPennies)
         {
-            sodas = new Dictionary<Soda, int>
+            sodaAmount = new List<int>
             {
-                { grapeSoda, amountOfGrapeSoda },
-                { grapeSoda, amountOfOrangeSoda },
-                { grapeSoda, amountOfLemonSoda }
+                {amountOfGrapeSoda },
+                {amountOfOrangeSoda },
+                {amountOfLemonSoda }
+            };
+            sodas = new List<Soda>
+            {
+                { grapeSoda },
+                { orangeSoda},
+                { lemonSoda}
             };
             piggyBank = new PiggyBank(amountOfQuarters, amountOfDimes, amountOfNickels, amountOfPennies);
         }

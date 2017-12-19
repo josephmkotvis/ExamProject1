@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace ExamProject
 {
-    class Nickel : Coin
+    class Nickel :Coin
     {
         public Nickel()
         {
 
-            value = .05;
+            this.value = .05;
         }
     }
 }

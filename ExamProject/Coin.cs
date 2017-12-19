@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace ExamProject
 {
-    class Coin
+    public class Coin
     {
-        protected double value;
+        public double value;
     }
 }

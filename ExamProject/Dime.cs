@@ -10,7 +10,7 @@ namespace ExamProject
     {
         public Dime()
         {
-            value = .10;
+           this. value = .10;
         }
     }
 }

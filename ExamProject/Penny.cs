@@ -10,7 +10,7 @@ namespace ExamProject
     {
         public Penny()
         {
-            value = .01;
+            this.value = .01;
         }
     }
 }

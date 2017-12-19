@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamProject
 {
-    class Soda
+    public class Soda
     {
         protected double cost;
     }

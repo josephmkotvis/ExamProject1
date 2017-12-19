@@ -13,6 +13,8 @@ namespace ExamProject
             SodaMachine sodaMachine = new SodaMachine(5,8,10,20, 10, 20, 50);
             Person buyer = new Person(0,0,0,30, 30, 30, 30);
             Cafe ward4 = new Cafe(buyer, sodaMachine);
+            ward4.CreateInteraction();
+            Console.ReadLine();
         }
     }
 }
