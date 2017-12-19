@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace ExamProject
 {
-    class Person
+    class Inventory
     {
-        PiggyBank piggyBank;
-        
-        public Person()
+        Dictionary<Soda, int> sodas;
+        public Inventory()
         {
-            piggyBank = new PiggyBank();
+            sodas = new Dictionary<Soda, int>();
         }
     }
 }
