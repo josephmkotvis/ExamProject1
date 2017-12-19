@@ -8,5 +8,10 @@ namespace ExamProject
 {
     class PiggyBank
     {
+        Dictionary<Coin, int> coins;
+        public PiggyBank()
+        {
+            coins = new Dictionary<Coin, int>();
+        }
     }
 }
