@@ -8,5 +8,9 @@ namespace ExamProject
 {
     class GrapeSoda : Soda
     {
+        public GrapeSoda()
+        {
+            cost = .60;
+        }
     }
 }

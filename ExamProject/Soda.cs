@@ -8,5 +8,6 @@ namespace ExamProject
 {
     class Soda
     {
+        protected double cost;
     }
 }
