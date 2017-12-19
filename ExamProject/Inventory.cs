@@ -11,12 +11,12 @@ namespace ExamProject
     {
         public List <int> sodaAmount;
         public List<Soda> sodas;
-        GrapeSoda grapeSoda;
-        OrangeSoda orangeSoda;
-        LemonSoda lemonSoda;
         public PiggyBank piggyBank;
         public Inventory(int amountOfGrapeSoda, int amountOfOrangeSoda, int amountOfLemonSoda, int amountOfQuarters, int amountOfDimes, int amountOfNickels, int amountOfPennies)
         {
+            GrapeSoda grapeSoda = new GrapeSoda();
+            OrangeSoda orangeSoda = new OrangeSoda(); ;
+            LemonSoda lemonSoda = new LemonSoda();
             sodaAmount = new List<int>
             {
                 {amountOfGrapeSoda },

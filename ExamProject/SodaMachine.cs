@@ -15,9 +15,8 @@ namespace ExamProject
        
         public SodaMachine(int amountOfGrapeSoda, int amountOfOrangeSoda, int amountOfLemonSoda, int amountOfQuarters, int amountOfDimes, int amountOfNickels, int amountOfPennies)
         {
-
             inventory = new Inventory(amountOfGrapeSoda, amountOfOrangeSoda, amountOfLemonSoda, amountOfQuarters, amountOfDimes, amountOfNickels, amountOfPennies);
-
+            UI = new UserInterface(this);
         }
         public void CheckSodaAvailability(string buyerResponse)
         {
