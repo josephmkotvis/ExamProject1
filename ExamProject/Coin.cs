@@ -8,5 +8,6 @@ namespace ExamProject
 {
     class Coin
     {
+        protected double value;
     }
 }

@@ -8,5 +8,10 @@ namespace ExamProject
 {
     class Nickel : Coin
     {
+        public Nickel()
+        {
+
+            value = .05;
+        }
     }
 }
