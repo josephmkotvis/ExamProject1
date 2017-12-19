@@ -15,7 +15,31 @@ namespace ExamProject
             inventory = new Inventory(amountOfGrapeSoda, amountOfOrangeSoda, amountOfLemonSoda, amountOfQuarters, amountOfDimes, amountOfNickels, amountOfPennies);
 
         }
-        void CheckCoins()
+        public void CheckSodaAvailability()
+        {
+
+        }
+        public void CheckSodaPrice()
+        {
+
+        }
+        public void InformSodaAvailability()
+        {
+
+        }
+        public void InformSodaPrice()
+        {
+
+        }
+        public void CheckCoins()
+        {
+
+        }
+        public void CheckRegister()
+        {
+
+        }
+        public void InformRegisterAvailability()
         {
 
         }
@@ -23,17 +47,21 @@ namespace ExamProject
         {
 
         }
-        void SellSoda()
+        public void SellSoda()
         {
 
         }
-        void RemoveCoins()
+        public void TakeCoins()
         {
 
         }
-        void AddCoints()
-        {
+        //void RemoveCoins()
+        //{
 
-        }
+        //}
+        //void AddCoins()
+        //{
+
+        //}
     }
 }

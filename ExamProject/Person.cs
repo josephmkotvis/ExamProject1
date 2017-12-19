@@ -16,22 +16,25 @@ namespace ExamProject
 
         }
 
-        void ChoosesSoda()
+        public void ChoosesSoda()
         {
             //Chooses what soda to purchase
         }
-        void Buy()
+        public void BuySoda()
         {
             //Buys a soda from sodamachine.
         }
-        void CheckCoins()
+        public void CheckCoins()
         {
             // checks to see if there are enough coins
         }
-        void TakesSoda()
+        public void TakesSoda()
         {
             //takes soda from sodamachine
         }
+        public void CheckPriceOpinion()
+        {
 
+        }
     }
 }
