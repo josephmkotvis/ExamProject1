@@ -10,10 +10,10 @@ namespace ExamProject
     {
         Inventory inventory;
         PiggyBank piggyBank;
-        public Person(int amountOfQuarters, int amountOfDimes, int amountOfNickels, int amountOfPennies)
+        public Person(int amountOfGrapeSoda, int amountOfOrangeSoda, int amountOfLemonSoda, int amountOfQuarters, int amountOfDimes, int amountOfNickels, int amountOfPennies)
         {
-            inventory = new Inventory(0,0,0);
-            piggyBank = new PiggyBank(amountOfQuarters, amountOfDimes, amountOfNickels, amountOfPennies);
+            inventory = new Inventory(amountOfGrapeSoda,amountOfOrangeSoda,amountOfLemonSoda, amountOfQuarters, amountOfDimes, amountOfNickels, amountOfPennies);
+
         }
 
         void ChoosesSoda()

@@ -23,5 +23,37 @@ namespace ExamProject
                 { penny, amountOfPennies }
             };
         }
+        void AddQuarters()
+        {
+
+        }
+        void AddDimes()
+        {
+
+        }
+        void AddNickels()
+        {
+
+        }
+        void AddPennies()
+        {
+
+        }
+        void RemoveQuarters()
+        {
+
+        }
+        void RemoveDimes()
+        {
+
+        }
+        void RemoveNickels()
+        {
+
+        }
+        void RemovePennies()
+        {
+
+        }
     }
 }

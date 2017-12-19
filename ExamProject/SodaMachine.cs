@@ -9,12 +9,10 @@ namespace ExamProject
     class SodaMachine
     {
         Inventory inventory;
-        Register register;
-        public SodaMachine(int amountOfQuarters, int amountOfDimes, int amountOfNickels, int amountOfPennies)
+        public SodaMachine(int amountOfGrapeSoda, int amountOfOrangeSoda, int amountOfLemonSoda, int amountOfQuarters, int amountOfDimes, int amountOfNickels, int amountOfPennies)
         {
 
-            inventory = new Inventory(5,3,10);
-            register = new Register(amountOfQuarters, amountOfDimes, amountOfNickels, amountOfPennies);
+            inventory = new Inventory(amountOfGrapeSoda, amountOfOrangeSoda, amountOfLemonSoda, amountOfQuarters, amountOfDimes, amountOfNickels, amountOfPennies);
 
         }
         void CheckCoins()

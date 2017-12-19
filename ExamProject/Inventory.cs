@@ -12,7 +12,8 @@ namespace ExamProject
         GrapeSoda grapeSoda;
         OrangeSoda orangeSoda;
         LemonSoda lemonSoda;
-        public Inventory(int amountOfGrapeSoda, int amountOfOrangeSoda, int amountOfLemonSoda)
+        PiggyBank piggyBank;
+        public Inventory(int amountOfGrapeSoda, int amountOfOrangeSoda, int amountOfLemonSoda, int amountOfQuarters, int amountOfDimes, int amountOfNickels, int amountOfPennies)
         {
             sodas = new Dictionary<Soda, int>
             {
@@ -20,6 +21,7 @@ namespace ExamProject
                 { grapeSoda, amountOfOrangeSoda },
                 { grapeSoda, amountOfLemonSoda }
             };
+            piggyBank = new PiggyBank(amountOfQuarters, amountOfDimes, amountOfNickels, amountOfPennies);
         }
         void AddGrapeSoda()
         {
