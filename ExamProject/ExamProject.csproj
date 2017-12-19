@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cafe.cs" />
     <Compile Include="Coin.cs" />
     <Compile Include="Dime.cs" />
     <Compile Include="GrapeSoda.cs" />

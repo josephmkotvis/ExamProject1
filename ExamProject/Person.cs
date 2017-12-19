@@ -8,11 +8,17 @@ namespace ExamProject
 {
     class Person
     {
+        Inventory inventory;
         PiggyBank piggyBank;
-        
-        public Person()
+        public Person(int amountOfQuarters, int amountOfDimes, int amountOfNickels, int amountOfPennies)
         {
-            piggyBank = new PiggyBank();
+            inventory = new Inventory();
+            piggyBank = new PiggyBank(amountOfQuarters, amountOfDimes, amountOfNickels, amountOfPennies);
+        }
+        void Buy()
+        {
+            //Buys a soda from sodamachine.
+            //Then goes to sodamachine to check if theres enough 
         }
     }
 }

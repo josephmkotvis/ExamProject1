@@ -6,15 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamProject
 {
-    class Inventory
+    class Cafe
     {
-        Dictionary<Soda, int> sodas;
-        public Inventory()
-        {
-            sodas = new Dictionary<Soda, int>();
-
-
-
-        }
     }
 }

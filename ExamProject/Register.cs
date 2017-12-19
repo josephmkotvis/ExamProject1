@@ -15,11 +15,13 @@ namespace ExamProject
         Penny penny;
         public Register(int amountOfQuarters, int amountOfDimes, int amountOfNickels, int amountOfPennies)
         {
-            coins = new Dictionary<Coin, int>();
-            coins.Add(quarter, amountOfQuarters);
-            coins.Add(dime, amountOfDimes);
-            coins.Add(nickel, amountOfNickels);
-            coins.Add(penny, amountOfPennies);
+            coins = new Dictionary<Coin, int>
+            {
+                { quarter, amountOfQuarters },
+                { dime, amountOfDimes },
+                { nickel, amountOfNickels },
+                { penny, amountOfPennies }
+            };
         }
     }
 }

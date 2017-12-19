@@ -9,9 +9,19 @@ namespace ExamProject
     class PiggyBank
     {
         Dictionary<Coin, int> coins;
-        public PiggyBank()
+        Quarter quarter;
+        Dime dime;
+        Nickel nickel;
+        Penny penny;
+        public PiggyBank(int amountOfQuarters, int amountOfDimes, int amountOfNickels, int amountOfPennies)
         {
-            coins = new Dictionary<Coin, int>();
+            coins = new Dictionary<Coin, int>
+            {
+                { quarter, amountOfQuarters },
+                { dime, amountOfDimes },
+                { nickel, amountOfNickels },
+                { penny, amountOfPennies }
+            };
         }
     }
 }
