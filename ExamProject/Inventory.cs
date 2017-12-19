@@ -9,12 +9,42 @@ namespace ExamProject
     class Inventory
     {
         Dictionary<Soda, int> sodas;
-        public Inventory()
+        GrapeSoda grapeSoda;
+        OrangeSoda orangeSoda;
+        LemonSoda lemonSoda;
+        public Inventory(int amountOfGrapeSoda, int amountOfOrangeSoda, int amountOfLemonSoda)
         {
-            sodas = new Dictionary<Soda, int>();
-
-
+            sodas = new Dictionary<Soda, int>
+            {
+                { grapeSoda, amountOfGrapeSoda },
+                { grapeSoda, amountOfOrangeSoda },
+                { grapeSoda, amountOfLemonSoda }
+            };
+        }
+        void AddGrapeSoda()
+        {
 
         }
+        void AddOrangeSoda()
+        {
+
+        }
+        void AddLemonSoda()
+        {
+
+        }
+        void RemoveGrapeSoda()
+        {
+
+        }
+        void RemoveOrangeSoda()
+        {
+
+        }
+        void RemoveLemonSoda()
+        {
+
+        }
+
     }
 }

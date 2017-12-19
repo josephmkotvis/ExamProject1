@@ -8,5 +8,12 @@ namespace ExamProject
 {
     class Cafe
     {
+        Person buyer;
+        SodaMachine sodaMachine;
+        public Cafe(Person buyer, SodaMachine sodaMachine)
+        {
+            this.buyer = buyer;
+            this.sodaMachine = sodaMachine;
+        }
     }
 }

@@ -12,13 +12,26 @@ namespace ExamProject
         PiggyBank piggyBank;
         public Person(int amountOfQuarters, int amountOfDimes, int amountOfNickels, int amountOfPennies)
         {
-            inventory = new Inventory();
+            inventory = new Inventory(0,0,0);
             piggyBank = new PiggyBank(amountOfQuarters, amountOfDimes, amountOfNickels, amountOfPennies);
+        }
+
+        void ChoosesSoda()
+        {
+            //Chooses what soda to purchase
         }
         void Buy()
         {
             //Buys a soda from sodamachine.
-            //Then goes to sodamachine to check if theres enough 
         }
+        void CheckCoins()
+        {
+            // checks to see if there are enough coins
+        }
+        void TakesSoda()
+        {
+            //takes soda from sodamachine
+        }
+
     }
 }

@@ -13,7 +13,7 @@ namespace ExamProject
         public SodaMachine(int amountOfQuarters, int amountOfDimes, int amountOfNickels, int amountOfPennies)
         {
 
-            inventory = new Inventory();
+            inventory = new Inventory(5,3,10);
             register = new Register(amountOfQuarters, amountOfDimes, amountOfNickels, amountOfPennies);
 
         }

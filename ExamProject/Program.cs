@@ -11,8 +11,8 @@ namespace ExamProject
         static void Main(string[] args)
         {
             SodaMachine sodaMachine = new SodaMachine(20, 10, 20, 50);
-            Person buyer = new Person(30,30,30,30, sodaMachine);
-
+            Person buyer = new Person(30, 30, 30, 30);
+            Cafe ward4 = new Cafe(buyer, sodaMachine);
         }
     }
 }
