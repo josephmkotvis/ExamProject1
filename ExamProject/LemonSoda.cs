@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ExamProject
 {
-    class LemonSoda
+    class LemonSoda : Soda
     {
     }
 }

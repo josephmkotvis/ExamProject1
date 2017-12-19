@@ -45,6 +45,7 @@
     <Compile Include="Coin.cs" />
     <Compile Include="Dime.cs" />
     <Compile Include="GrapeSoda.cs" />
+    <Compile Include="LemonSoda.cs" />
     <Compile Include="Nickel.cs" />
     <Compile Include="OrangeSoda.cs" />
     <Compile Include="Penny.cs" />
